@@ -1,0 +1,78 @@
+[
+  {
+    "id": 1,
+    "name": "The Forest Hiker",
+    "duration": 7,
+    "maxGroupSize": 25,
+    "difficulty": "easy",
+    "ratingsAverage": 4.7,
+    "ratingsQuantity": 37,
+    "price": 497,
+    "summary": "Breathtaking hike through the scenic Redwood Forest",
+    "description": "Experience the beauty of nature with this unforgettable hiking tour through the majestic Redwood Forest. Immerse yourself in stunning landscapes, witness diverse wildlife, and create lifelong memories on this seven-day adventure.",
+    "imageCover": "tour-1.jpg",
+    "images": [
+      "image1.jpg",
+      "image2.jpg",
+      "image3.jpg"
+    ],
+    "startDates": [
+      "2023-08-01",
+      "2023-09-01",
+      "2023-10-01"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "The Sea Explorer",
+    "duration": 5,
+    "maxGroupSize": 15,
+    "difficulty": "medium",
+    "ratingsAverage": 4.9,
+    "ratingsQuantity": 27,
+    "price": 895,
+    "summary": "Exciting sea adventure exploring hidden treasures",
+    "description": "Embark on a thrilling five-day sea exploration journey, where you'll discover hidden treasures in the deep ocean. Dive into crystal-clear waters, encounter magnificent marine life, and uncover ancient shipwrecks on this once-in-a-lifetime experience.",
+    "imageCover": "tour-2.jpg",
+    "images": [
+      "image1.jpg",
+      "image2.jpg",
+      "image3.jpg"
+    ],
+    "startDates": [
+      "2023-08-15",
+      "2023-09-15",
+      "2023-10-15"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "The Snow Adventurer",
+    "duration": 3,
+    "maxGroupSize": 10,
+    "difficulty": "difficult",
+    "ratingsAverage": 4.5,
+    "ratingsQuantity": 12,
+    "price": 1299,
+    "summary": "Thrilling snow adventure in the frozen wilderness",
+    "description": "Embark on an exhilarating three-day snow adventure in the frozen wilderness. Traverse snow-covered landscapes, conquer icy peaks, and witness breathtaking aurora displays. This adventure is perfect for adrenaline junkies and nature enthusiasts alike.",
+    "imageCover": "tour-3.jpg",
+    "images": [
+      "image1.jpg",
+      "image2.jpg",
+      "image3.jpg"
+    ],
+    "startDates": [
+      "2023-12-01",
+      "2023-12-15",
+      "2024-01-01"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Test Tour",
+    "duration": 7,
+    "maxGroupSize": 25,
+    "difficulty": "easy"
+  }
+]
