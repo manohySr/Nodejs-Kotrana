@@ -1,6 +1,5 @@
 [
   {
-    "id": 1,
     "name": "The Forest Hiker",
     "duration": 7,
     "maxGroupSize": 25,
@@ -23,7 +22,6 @@
     ]
   },
   {
-    "id": 2,
     "name": "The Sea Explorer",
     "duration": 5,
     "maxGroupSize": 15,
@@ -46,7 +44,6 @@
     ]
   },
   {
-    "id": 3,
     "name": "The Snow Adventurer",
     "duration": 3,
     "maxGroupSize": 10,
@@ -67,12 +64,5 @@
       "2023-12-15",
       "2024-01-01"
     ]
-  },
-  {
-    "id": 4,
-    "name": "Test Tour",
-    "duration": 7,
-    "maxGroupSize": 25,
-    "difficulty": "easy"
   }
 ]
