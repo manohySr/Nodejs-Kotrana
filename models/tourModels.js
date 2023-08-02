@@ -1,12 +1,12 @@
 const mongoose = require('mongoose');
 const slugify = require('slugify');
-const tourSchema = mongoose.Schema(
+const tourSchema = new mongoose.Schema(
   {
     name: {
       type: String,
       required: [true, 'A tour should have a name'],
       unique: true,
-      trim: true,
+      trim: true, // REMOVE ALL THE WHITE SPACE IN THE BEGINNING AND THE ENDING OF THE STRING
       maxlength: [40, 'A tour should be below or equal to 40 characters'],
       minlength: [10, 'A tour should be above or equal to 10 characters'],
     },
@@ -64,7 +64,7 @@ const tourSchema = mongoose.Schema(
     createdAt: {
       type: Date,
       default: Date.now(),
-      select: false,
+      select: false, // DOESN T SEND TO RESPOND
     },
     secretTour: {
       type: Boolean,

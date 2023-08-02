@@ -1,6 +1,6 @@
 const Tour = require('./../models/tourModels');
 const APIFeatures = require('./../utils/APIFeatures');
-const cachAsyncError = require('./../utils/cachSyncError');
+const catchAsyncError = require('../utils/catchAsyncError');
 const AppError = require('./../utils/appError');
 
 const aliasTopOneTour = (req, res, next) => {
@@ -10,7 +10,7 @@ const aliasTopOneTour = (req, res, next) => {
   next();
 };
 
-const getMonthlyPlan = cachAsyncError(async (req, res, next) => {
+const getMonthlyPlan = catchAsyncError(async (req, res, next) => {
   const year = req.params.year * 1;
 
   const plan = await Tour.aggregate([
@@ -67,7 +67,7 @@ const getMonthlyPlan = cachAsyncError(async (req, res, next) => {
   });
 });
 
-const getAllTours = cachAsyncError(async (req, res, next) => {
+const getAllTours = catchAsyncError(async (req, res, next) => {
   // DEFINING QUERY
   let query = Tour.find();
 
@@ -90,7 +90,7 @@ const getAllTours = cachAsyncError(async (req, res, next) => {
   });
 });
 
-const createTour = cachAsyncError(async (req, res) => {
+const createTour = catchAsyncError(async (req, res) => {
   const newTour = await Tour.create(req.body);
 
   res.status(201).json({
@@ -115,7 +115,7 @@ const createTour = cachAsyncError(async (req, res) => {
   // }
 });
 
-const getTour = cachAsyncError(async (req, res, next) => {
+const getTour = catchAsyncError(async (req, res, next) => {
   const tour = await Tour.findById(req.params.id);
 
   if (!tour) {
@@ -130,7 +130,7 @@ const getTour = cachAsyncError(async (req, res, next) => {
   });
 });
 
-const updateTour = cachAsyncError(async (req, res, next) => {
+const updateTour = catchAsyncError(async (req, res, next) => {
   const tour = await Tour.findByIdAndUpdate(req.params.id, req.body, {
     new: true,
     runValidators: true,
@@ -144,7 +144,7 @@ const updateTour = cachAsyncError(async (req, res, next) => {
   });
 });
 
-const deleteTour = cachAsyncError(async (req, res, next) => {
+const deleteTour = catchAsyncError(async (req, res, next) => {
   await Tour.findByIdAndDelete(req.params.id);
 
   res.status(204).json({
